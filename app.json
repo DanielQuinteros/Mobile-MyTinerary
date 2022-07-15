@@ -1,0 +1,32 @@
+{
+  "expo": {
+    "name": "mytinerary-app-amu-rodrigo",
+    "slug": "mytinerary-app-amu-rodrigo",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/logicon.png",
+    "splash": {
+      "image": "./assets/logos3.png",
+      "resizeMode": "contain",
+      "backgroundColor": "rgb(11, 94, 215)"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/logicon.png",
+        "backgroundColor": "white"
+      }
+    },
+    "web": {
+      "favicon": "./assets/logos3.png"
+    }
+  }
+}

@@ -24,8 +24,8 @@ export default function Cards (props) {
             <View key={cities._id} style={{marginBottom: 10}}>
                 <Card city={cities} navigation={props.navigation}/>
             </View>) : <>
-                <Text style={styles.fredoka}>TYPE ANOTHER CITY PLEASE</Text>
-                <Text style={styles.fredoka}>we didn't find that!</Text>
+                <Text style={styles.fredoka}>WE DON'T HAVE THIS TRIP 😕</Text>
+                
             </>
         }
         </>
@@ -35,7 +35,12 @@ export default function Cards (props) {
 //styles
 const styles = StyleSheet.create({
     fredoka: {
-        fontFamily: 'FredokaOne_400Regular',
-        textAlign: 'center'
+        fontWeight: 'bold',
+        textAlign: 'center',
+        fontSize:30,
+        textShadowColor: 'black',
+        textShadowOffset: {width: 0,height: 2},
+        textShadowRadius: 5,
+        color: 'rgb(11, 94, 215)'
     }
 })

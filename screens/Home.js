@@ -1,8 +1,4 @@
 import {StyleSheet,Text,ScrollView,View,Pressable,ImageBackground,Dimensions} from 'react-native'
-// import {FredokaOne_400Regular} from '@expo-google-fonts/dev'
-// import {Licorice_400Regular} from '@expo-google-fonts/dev'
-// import AppLoading from 'expo-app-loading'
-// import {useFonts} from 'expo-font'
 import {useNavigation} from '@react-navigation/native'
 import Carrousel from '../components/Carrousel'
 
@@ -10,8 +6,6 @@ var {height} = Dimensions.get('window')
 
 export default function Home() {
     const navigation = useNavigation()
-    // let [fonts] = useFonts({FredokaOne_400Regular,Licorice_400Regular})
-    // if (!fonts) {return <AppLoading />}
     return (
         <ScrollView style={styles.home}>
             <ImageBackground source={require('../assets/photos/camino.jpg')} resizeMode="cover" style={styles.backGhome}>
@@ -22,7 +16,7 @@ export default function Home() {
                     <Text style={styles.fredoka}>Designed by insiders who know and love their cities!</Text>
                     </View>
                     <Pressable onPress={()=>navigation.navigate('Cities')} style={styles.linkHero} >
-                        <Text style={[styles.linkText,styles.fredoka]}>LOOK IT NOW</Text>
+                        <Text style={[styles.linkText,styles.fredoka]}>LOOK IT NOW!</Text>
                     </Pressable>
                 </View>
             </ImageBackground>
@@ -55,20 +49,27 @@ const styles = StyleSheet.create({
     },
     licorice: {
         fontSize: 70,
-        //fontFamily: 'Sans_serif',
+        fontWeight: 'bold',
         elevation: 100,
         textShadowColor: 'white',
         textShadowOffset: {width: 0,height: 2},
-        textShadowRadius: 5,
-        color: 'black',
+        textShadowRadius: 10,
+        color: 'rgb(11, 94, 215)',
         backgroundColor:"rgba(128, 128, 128, 0.356)",
         padding: 10,
         marginTop: 50,
         borderRadius:10
     },
     fredoka: {
-        // fontFamily: 'FredokaOne_400Regular',
+        
         textAlign: 'center',
+        fontWeight: 'bold',
+        fontSize: 20,
+        color:'white',
+        textShadowColor:'rgb(11, 94, 215)',
+        textShadowOffset:{width: 0,height: 2},
+        textShadowRadius: 8,
+      
 
         
         
@@ -84,7 +85,8 @@ const styles = StyleSheet.create({
     },
     tombo:{
         marginTop:90,
-        backgroundColor:"rgba(128, 128, 128, 0.356)"
+        backgroundColor:"rgba(128, 128, 128, 0.356)",
+        borderRadius:4
     },
     linkText: {
         color: 'white',

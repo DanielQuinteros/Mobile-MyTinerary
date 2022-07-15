@@ -37,10 +37,13 @@ function Backdrop({ scrollX }) {
             <Text style={{
                 fontWeight: 'bold',
                 fontSize: 50,
+                textShadowColor: 'white',
+                textShadowOffset: {width: 0,height: 2},
+                textShadowRadius: 5,
                 zIndex:1,
                 textAlign: 'center',
                 marginTop: '5%',
-                color: 'white',
+                color: 'rgb(11, 94, 215)',
             }}>Popular MyTineraries</Text>
             {data.map((cities, index) => {
                 const inputRange = [
@@ -119,14 +122,17 @@ export default function App() {
                                     marginHorizontal: ESPACIO,
                                     padding: ESPACIO,
                                     borderRadius: 34,
-                                    backgroundColor: "black",
+                                    backgroundColor: "rgb(11, 94, 215)",
                                     
                                     alignItems: "center",
                                     transform: [{ translateY: scrollY }],
                                 }}
                             >
                                 <Image source={{ uri: item.image }} style={styles.posterImage} />
-                                <Text style={{color: 'white', fontWeight: "bold", fontSize: 26 }}>
+                                <Text style={{color: 'white', fontWeight: "bold", fontSize: 26,
+                            textShadowColor:'black',
+                            textShadowOffset:{width: 0,height: 2},
+                            textShadowRadius: 5, }}>
                                     {item.name}
                                     
                                 </Text>

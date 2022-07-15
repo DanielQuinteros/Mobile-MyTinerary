@@ -55,6 +55,7 @@ const styles = StyleSheet.create({
         width: '100%',
         flexDirection: 'column',
         textAlign: 'center',
+        
     },
     input: {
         width: '100%',
@@ -62,7 +63,8 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         marginTop: 10,
         marginBottom: 10,
-        color: 'black'
+        color: 'rgb(11, 94, 215)',
+        backgroundColor:'white'
     },
     fredoka: {
        fontSize: 30,

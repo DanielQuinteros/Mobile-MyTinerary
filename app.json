@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "mytinerary-app-amu-rodrigo",
-    "slug": "mytinerary-app-amu-rodrigo",
+    "name": "mytinerary-app",
+    "slug": "mytinerary-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/logicon.png",

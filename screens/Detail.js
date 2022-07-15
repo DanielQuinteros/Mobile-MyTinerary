@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from 'react'
 import {StyleSheet,Text,ScrollView,View,Image,ImageBackground,Dimensions} from 'react-native'
-//redux
 import {useDispatch, useSelector} from 'react-redux'
 import citiesActions from '../redux/actions/citiesActions'
 
@@ -18,7 +17,7 @@ export default function Itineraries(props) {
     const oneCityFromRedux = useSelector(store => store.citiesReducer.oneCity)
 
 
-    var image = 'https://mytinerary-amuchastegui-rodrig.herokuapp.com'+oneCityFromRedux.image
+    var image = 'https://my-tinerary-quinteros-back.herokuapp.com'+oneCityFromRedux.image
 
     return (
         <View style={styles.home}>

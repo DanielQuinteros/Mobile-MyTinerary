@@ -25,8 +25,8 @@ export default function Itineraries(props) {
                 <View style={styles.backGhome}>
                     <ScrollView style={styles.body}>
                         <View style={styles.absolute}>
-                            <Text style={styles.fredokaTitle}>{oneCityFromRedux.city}</Text>
-                            <Text style={styles.fredokaSubtitle}>{oneCityFromRedux.country} - {oneCityFromRedux.name}</Text>
+                            <Text style={styles.textTitle}>{oneCityFromRedux.city}</Text>
+                            <Text style={styles.textSubtitle}>{oneCityFromRedux.country} - {oneCityFromRedux.name}</Text>
                         </View>
                         <Image source={{uri: oneCityFromRedux.image}} style={{width: '100%', height: 290}}/>
                         <Text>-</Text>
@@ -73,7 +73,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         
     },
-    fredokaTitle: {
+    textTitle: {
 
         fontSize: 40,
         textAlign: 'center',
@@ -81,7 +81,7 @@ const styles = StyleSheet.create({
         textShadowOffset: {width: 0,height: 2},
         textShadowRadius: 1
     },
-    fredokaSubtitle: {
+    textSubtitle: {
      
         fontSize: 35,
         paddingBottom: 200,
@@ -91,11 +91,11 @@ const styles = StyleSheet.create({
         textShadowOffset: {width: 2,height: 3},
         textShadowRadius: 1
     },
-    fredoka: {
+    textt: {
        
         textAlign: 'center'
     },
-    licorice: {
+      letter: {
         fontSize: 30,
         textAlign: 'center',
         textShadowColor: 'black',

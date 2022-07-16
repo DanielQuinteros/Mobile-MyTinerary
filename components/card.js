@@ -11,7 +11,7 @@ export default function Card (props) {
     return (
         <TouchableOpacity onPress={()=>navigation.navigate('Detail',{id: props.city._id})}>
             <View style={styles.absolute}>
-                <Text style={styles.fredokaTitle}>{props.city.name}</Text>
+                <Text style={styles.titleTi}>{props.city.name}</Text>
             </View>
             <Image source={{uri: image}} style={{width: '100%', height: 250}}/>
         </TouchableOpacity>
@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         
     },
-    fredokaTitle: {
+    titleTi: {
         fontFamily: 'FredokaOne_400Regular',
         fontSize: 30,
         textAlign: 'center',

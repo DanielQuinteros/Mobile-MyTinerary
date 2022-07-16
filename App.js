@@ -12,12 +12,11 @@ import Detail from './screens/Detail'
 
 //redux
 import {Provider} from 'react-redux'
-import {createStore,applyMiddleware} from 'redux'
-import thunk from 'redux-thunk'
+import {configureStore as createStore} from '@reduxjs/toolkit';
 import mainReducer from './redux/recucers/mainReducer'
 
 
-const reduxStore = createStore(mainReducer,applyMiddleware(thunk))
+const reduxStore = createStore({reducer:mainReducer})
 
 const Stack = createStackNavigator();
 
@@ -55,14 +54,3 @@ export default function App() {
     )
 }
 
-//REDUX
-//npm i react-redux
-//npm i redux
-//npm i redux-thunk
-
-//AXIOS
-//npm i axios
-
-//STACK para start
-//npm install @react-navigation/stack
-//npm install react-native-gesture-handler

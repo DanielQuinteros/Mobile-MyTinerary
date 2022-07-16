@@ -24,7 +24,7 @@ export default function Cards (props) {
             <View key={cities._id} style={{marginBottom: 10}}>
                 <Card city={cities} navigation={props.navigation}/>
             </View>) : <>
-                <Text style={styles.fredoka}>WE DON'T HAVE THIS TRIP 😕</Text>
+                <Text style={styles.textCardno}>WE DON'T HAVE THIS TRIP 😕</Text>
                 
             </>
         }
@@ -34,7 +34,7 @@ export default function Cards (props) {
 
 //styles
 const styles = StyleSheet.create({
-    fredoka: {
+    textCardno: {
         fontWeight: 'bold',
         textAlign: 'center',
         fontSize:30,

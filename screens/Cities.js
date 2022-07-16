@@ -20,9 +20,9 @@ export default function Cities(props) {
 
     return (
         <View style={styles.home}>
-            <ImageBackground source={require('../assets/photos/lugaresnevados.jpg')} resizeMode="cover" style={styles.backGhome}>
-                <View style={styles.backGhome}>
-                    <TextInput onChangeText={text => setInput(text)} placeholder="Search your Trip" style={[styles.input,styles.fredoka]} />
+            <ImageBackground source={require('../assets/photos/lugaresnevados.jpg')} resizeMode="cover" style={styles.homeBack}>
+                <View style={styles.homeBack}>
+                    <TextInput onChangeText={text => setInput(text)} placeholder="Search your Trip" style={[styles.input,styles.text]} />
                     <ScrollView style={styles.body}>
                         <Cards input={input} cities={citiesFromRedux} navigation={props.navigation} />
                     </ScrollView>
@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
         width: "100%",
        
     },
-    backGhome: {
+    homeBack: {
         width: '100%',
         height: height,
         margin: 0,
@@ -66,7 +66,7 @@ const styles = StyleSheet.create({
         color: 'rgb(11, 94, 215)',
         backgroundColor:'white'
     },
-    fredoka: {
+    text: {
        fontSize: 30,
       
         textAlign: 'center'

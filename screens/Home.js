@@ -8,15 +8,15 @@ export default function Home() {
     const navigation = useNavigation()
     return (
         <ScrollView style={styles.home}>
-            <ImageBackground source={require('../assets/photos/camino.jpg')} resizeMode="cover" style={styles.backGhome}>
-                <View style={styles.backGhome}>
-                    <Text style={styles.licorice}>MyTinerary</Text>
+            <ImageBackground source={require('../assets/photos/camino.jpg')} resizeMode="cover" style={styles.homeBack}>
+                <View style={styles.homeBack}>
+                    <Text style={styles.font}>MyTinerary</Text>
                     <View style={styles.tombo}>
-                    <Text style={styles.fredoka}>FIND YOUR PERFECT TRIP</Text>
-                    <Text style={styles.fredoka}>Designed by insiders who know and love their cities!</Text>
+                    <Text style={styles.texts}>FIND YOUR PERFECT TRIP</Text>
+                    <Text style={styles.texts}>Designed by insiders who know and love their cities!</Text>
                     </View>
                     <Pressable onPress={()=>navigation.navigate('Cities')} style={styles.linkHero} >
-                        <Text style={[styles.linkText,styles.fredoka]}>LOOK IT NOW!</Text>
+                        <Text style={[styles.linkText,styles.texts]}>LOOK IT NOW!</Text>
                     </Pressable>
                 </View>
             </ImageBackground>
@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
         width: "100%",
         backgroundColor: 'rgba(130, 77, 52, 0.4)'
     },
-    backGhome: {
+    homeBack: {
         width: '100%',
         height: height,
         margin: 0,
@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
         justifyContent: 'flex-start',
         
     },
-    licorice: {
+    font: {
         fontSize: 70,
         fontWeight: 'bold',
         elevation: 100,
@@ -60,7 +60,7 @@ const styles = StyleSheet.create({
         marginTop: 50,
         borderRadius:10
     },
-    fredoka: {
+    texts: {
         
         textAlign: 'center',
         fontWeight: 'bold',
